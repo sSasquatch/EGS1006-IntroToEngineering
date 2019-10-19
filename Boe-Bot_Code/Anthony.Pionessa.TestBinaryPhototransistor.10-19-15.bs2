@@ -1,0 +1,11 @@
+' Robotics with the Boe-Bot - TestBinaryPhototransistor.bs2
+' Display 1 when the phototransistor circuit applies more than 1.4 V to P6
+' or 0 when it applies less than 1.4 V.
+' {$STAMP BS2}
+' {$PBASIC 2.5}
+PAUSE 1000
+DEBUG CLS
+DO
+DEBUG HOME, "IN6 = ", BIN IN6
+PAUSE 100
+LOOP

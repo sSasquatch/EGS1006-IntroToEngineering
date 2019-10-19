@@ -1,0 +1,13 @@
+' Robotics with the Boe-Bot - TestP6LightSense.bs2
+' Test Boe-Bot's left photoresistor circuit.
+' {$STAMP BS2} ' Target module = BASIC Stamp 2
+' {$PBASIC 2.5} ' Language = PBASIC 2.5
+tLeft VAR Word ' Stores left sensor decay time
+PAUSE 1000 ' Wait 1 s before any DEBUG
+DO ' Main loop
+HIGH 3 ' 1 Set P6 high to start charging
+PAUSE 1 ' 2 Wait for cap to charge
+RCTIME 3, 1, tLeft ' 3 P6->input, measure decay time
+DEBUG HOME, "tLeft = ", DEC5 tLeft ' Display result
+PAUSE 100 ' Wait 0.1 seconds
+LOOP ' Repeat main loop

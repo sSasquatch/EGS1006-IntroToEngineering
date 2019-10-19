@@ -1,0 +1,10 @@
+' Robotics with the Boe-Bot - StartResetIndicator.bs2
+' Test the piezospeaker circuit.
+' {$STAMP BS2} ' Stamp directive.
+' {$PBASIC 2.5} ' PBASIC directive.
+DEBUG CLS, "Beep!!!" ' Display while speaker beeps.
+FREQOUT 4, 2000, 3000 ' Signal program start/reset.
+DO ' DO...LOOP
+DEBUG CR, "Waiting for reset…" ' Display message
+PAUSE 500 ' every 0.5 seconds
+LOOP ' until hardware reset.

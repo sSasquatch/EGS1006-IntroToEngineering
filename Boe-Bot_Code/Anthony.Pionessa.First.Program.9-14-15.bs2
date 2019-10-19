@@ -1,0 +1,8 @@
+' {$STAMP BS2}
+' {$PBASIC 2.5}
+
+       PAUSE 1000
+DEBUG "Hey, its me! Your Boe-Bot Jesus!"
+DEBUG CR, "What is 7 * 11?", CR, "The answer is:", DEC 7 * 11
+DEBUG CR, DEC 1 + 2 + 3 + 4
+END
